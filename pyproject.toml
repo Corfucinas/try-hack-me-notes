@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "try-hack-me-notes"
+version = "0.1.0"
+description = "Personal notes upon the completion of rooms"
+authors = ["Corfucinas <53630064+Corfucinas@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Corfucinas/try-hack-me-notes"
+keywords = ["cryptocurrency", "candlesticks", "download", "data", "ohlc"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pre-commit = "^2.6.0"
+
+[tool.black]
+line-length = 79
+exclude = '''
+(
+  /(
+      \.eggs
+    | \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
