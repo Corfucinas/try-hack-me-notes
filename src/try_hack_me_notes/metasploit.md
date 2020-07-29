@@ -1,5 +1,0 @@
-# Steps
-
-```bash
-msfdb init
-```
