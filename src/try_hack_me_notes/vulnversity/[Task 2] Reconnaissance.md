@@ -3,7 +3,7 @@
 ## Nmap
 
 ```bash
-nmap -sV <machines ip>
+nmap -sC -sV -T4 -A <machines ip> -oA nmap.nmap
 -sV  # Attempts to determine the version of the services running
 -p <x> or -p-  # Port scan for port or scan all ports
 -Pn  # Disable host discovery and just scan for open ports
